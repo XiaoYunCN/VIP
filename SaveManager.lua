@@ -202,7 +202,7 @@ local SaveManager = {} do
         end
 
         function SaveManager:BuildConfigSection(tab)
-                assert(self.Library, "必须设置SaveManager。图书馆")
+                assert(self.Library, "Must set InterfaceManager.Library")
 
                 local section = tab:AddSection("Configuration")
 
