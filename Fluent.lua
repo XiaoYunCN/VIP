@@ -1050,16 +1050,16 @@ function Library:SafeCallback(Function, ...)
 
                 if not i then
                         return Library:Notify({
-                                Title = "XSea Hub",
-                                Content = "Checking",
+                                Title = "提示",
+                                Content = "检查",
                                 SubContent = Event,
                                 Duration = 3,
                         })
                 end
 
                 return Library:Notify({
-                        Title = "XSea Hub",
-                        Content = "Checking",
+                        Title = "提示",
+                        Content = "检查",
                         SubContent = Event:sub(i + 1),
                         Duration = 3,
                 })
@@ -2796,8 +2796,8 @@ Components.Window = (function()
                                 MinimizeNotif = true
                                 local Key = Library.MinimizeKeybind and Library.MinimizeKeybind.Value or Library.MinimizeKey.Name
                                 Library:Notify({
-                                        Title = "XSea Hub",
-                                        Content = "Press " .. Key .. " to toggle the interface.",
+                                        Title = "提示",
+                                        Content = "按键 " .. Key .. " 切换界面。",
                                         Duration = 6
                                 })
                         end
@@ -5828,6 +5828,12 @@ end
 
 function Library:Notify(Config)
         return NotificationModule:New(Config)
+end
+
+if getgenv then
+        getgenv().Library = Library
+else
+        Library = Library
 end
 
 return Library, SaveManager, InterfaceManager
