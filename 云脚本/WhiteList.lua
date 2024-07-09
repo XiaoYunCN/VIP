@@ -3,6 +3,7 @@ print("《krX说自己写》")
 print("《krX is skid!!lol》")
 print("《Fallen Leaves Hub X抄袭云中心代码》")
 return {
+["GZDDLY"] = true,
 ["developer"] = true,
 ["pgfpyl8"] = true,
 ["clutch_cat1"] = true,
