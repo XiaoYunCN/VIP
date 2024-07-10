@@ -1,6 +1,7 @@
 print("《krX is skid!!lol")
 return {
 ["GZDDLY"] = true,
+["Hudson_From27"] = true,
 ["developer"] = true,
 ["pgfpyl8"] = true,
 ["clutch_cat1"] = true,
