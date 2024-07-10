@@ -1,5 +1,6 @@
 print("《krX is skid!!lol")
 return {
+["ggpp_xx"] = true,
 ["GZDDLY"] = true,
 ["Hudson_From27"] = true,
 ["developer"] = true,
