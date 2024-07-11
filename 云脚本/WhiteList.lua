@@ -1,4 +1,4 @@
-print("《krX is skid!!lol")
+print("krX is skid!!lol")
 return {
 ["ggpp_xx"] = true,
 ["GZDDLY"] = true,
