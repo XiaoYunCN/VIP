@@ -1,5 +1,10 @@
 print("krX is skid!!lol")
 return {
+["用户名"] = true,
+["用户名"] = true,
+["用户名"] = true,
+["用户名"] = true,
+["用户名"] = true,
 ["ggpp_xx"] = true,
 ["GZDDLY"] = true,
 ["Hudson_From27"] = true,
