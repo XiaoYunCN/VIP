@@ -2,6 +2,7 @@ print("krX is skid!!lol")
 print("验证白名单")
 wait(1)
 return {
+["jboxiang"] = true,
 ["wiesidj"] = true,
 ["qqqqqq99164hvs"] = true,
 ["FIRSK520"] = true,
