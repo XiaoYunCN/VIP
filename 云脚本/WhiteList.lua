@@ -1,7 +1,9 @@
 print("krX is skid!!lol")
 print("验证白名单")
-wait(1)
 return {
+["用户名"] = true,
+["用户名"] = true,
+["用户名"] = true,
 ["jboxiang"] = true,
 ["wiesidj"] = true,
 ["qqqqqq99164hvs"] = true,
