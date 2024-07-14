@@ -2,7 +2,7 @@ print("krX is skid!!lol")
 return {
 ["用户名"] = true,
 ["用户名"] = true,
-["用户名"] = true,
+["FIRSK520"] = true,
 ["5527yun1"] = true,
 ["jjj443322266"] = true,
 ["kuikuijj0"] = true,
