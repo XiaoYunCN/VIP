@@ -1,5 +1,6 @@
 print("验证白名单")
 return {
+["g_akgf"] = true,
 ["igvichhhhh"] = true,
 ["Izvps07"] = true,
 ["Wrysmilt"] = true,
