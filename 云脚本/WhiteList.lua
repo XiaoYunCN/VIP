@@ -3,7 +3,7 @@ print("验证白名单")
 return {
 ["用户名"] = true,
 ["用户名"] = true,
-["用户名"] = true,
+["xwzz123456aq"] = true,
 ["jboxiang"] = true,
 ["wiesidj"] = true,
 ["qqqqqq99164hvs"] = true,
