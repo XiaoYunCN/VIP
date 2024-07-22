@@ -1,5 +1,6 @@
 print("验证白名单")
 return {
+["Tommy3029zrt3"] = true,
 ["teiyodyodovy"] = true,
 ["64646jjdd"] = true,
 ["jbbjbvx"] = true,
