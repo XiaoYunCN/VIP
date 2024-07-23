@@ -27,7 +27,7 @@ return {
 ["gwjfwklzml"] = true,
 ["caixukum7"] = true,
 ["jiandan1105"] = true,
-["xieXiaoBAob"] = true,
+["XIEXIAObAob"] = true,
 ["seipomo520"] = true,
 ["A725yn"] = true,
 ["sjfkakgxo"] = true,
