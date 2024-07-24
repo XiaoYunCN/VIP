@@ -1,4 +1,5 @@
 --你们偷了Fluent ui文件，老外朋友给我的ui，你不知道吗？建议不要下载Fluent ui!!!!!
+--星月之夜我知道你偷了
 local Lighting = game:GetService("Lighting")
 local RunService = game:GetService("RunService")
 local LocalPlayer = game:GetService("Players").LocalPlayer
