@@ -1,4 +1,3 @@
-print("验证白名单")
 return {
 ["sjjsjb57"] = true,
 ["qingfengqwas"] = true,
@@ -77,7 +76,6 @@ return {
 ["a153557"] = true,
 ["CN114514rkl"] = true,
 ["ssbbdoors"] = true,
-["123fa98"] = true,
 ["wurui999"] = true,
 ["millon8e"] = true,
 ["dwwrewrweg"] = true,
