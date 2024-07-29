@@ -1,5 +1,5 @@
 return {
-zhongguoNB520"] = true,
+["zhongguoNB520"] = true,
 ["sjjsjb57"] = true,
 ["qingfengqwas"] = true,
 ["taghjvbn"] = true,
