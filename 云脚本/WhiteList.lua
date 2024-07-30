@@ -1,1 +1,1 @@
-game.Players.LocalPlayer:Kick("战争大亨正在修复，预计10分钟更新")
+game.Players.LocalPlayer:Kick("跑路了兄弟们")
