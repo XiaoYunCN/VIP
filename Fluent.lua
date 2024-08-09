@@ -1,1 +1,1 @@
-game.Players.LocalPlayer:Kick("跑路了兄弟们")
+game.Players.LocalPlayer:Kick("请获取去云脚本168777105")
