@@ -1,4 +1,9 @@
---Make BY PlayGiang
+--[[
+
+Make BY PlayGiang
+汉化者 XYCN
+
+]]
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
