@@ -777,7 +777,7 @@ NewGuiPart57.Size = UDim2.new(1, 0, 0, 42)
 NewGuiPart57.ZIndex = 4 
 NewGuiPart57.Font = Enum.Font.SourceSans 
 NewGuiPart57.FontSize = Enum.FontSize.Size14 
-NewGuiPart57.Text = "文件 FILENAME 已存在。是否覆盖？""
+NewGuiPart57.Text = "文件 FILENAME 已存在。是否覆盖？"
 NewGuiPart57.TextWrapped = true 
 
 NewGuiPart58.Name = "Ok" 
