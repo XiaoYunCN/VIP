@@ -1,6 +1,8 @@
 local rs = game:GetService("RunService")
 local ts = game:GetService("TweenService")
 
+local activeNotifications = 0
+
 local function object(class, properties)
         local localObject = Instance.new(class)
 
@@ -48,10 +50,6 @@ local function object(class, properties)
         })
 end
 
---[[if not ((rs:IsStudio() and game.Players.LocalPlayer.PlayerGui) or game.CoreGui):FindFirstChild("Abstract Notifications") then
-
-end]]
-
 local gui = object("ScreenGui", {
         Parent = (rs:IsStudio() and game.Players.LocalPlayer.PlayerGui) or game.CoreGui
 })
@@ -89,6 +87,12 @@ local notifications = {
 }
 
 function notifications:notify(options)
+        if activeNotifications >= 2 then
+                return
+        end
+
+        activeNotifications = activeNotifications + 1
+
         local theme = self.colorSchemes[notifications.theme]
         local callbacksBool = options.Accept or options.Dismiss
         options.Title = options.Title or "Notification"
@@ -166,8 +170,6 @@ function notifications:notify(options)
                 })
         end
 
-        local close
-
         local acceptButton; if options.Accept then
                 options.Accept.Callback = options.Accept.Callback or function() end
                 acceptButton = callbacksContainer:object("TextButton", {
@@ -220,7 +222,7 @@ function notifications:notify(options)
 
         local closing = false
 
-        close = function()
+        local function close()
                 closing = true
                 spawn(function()
                         icon:tween{ImageTransparency = 1}
@@ -230,10 +232,9 @@ function notifications:notify(options)
                         if dismissButton then dismissButton:tween{BackgroundTransparency = 1, TextTransparency = 1} end
                         task.wait(0.15)
                         if callbacksContainer then callbacksContainer:tween{BackgroundTransparency = 1} end
-                        task.wait(0.1)
-                        mainFrame:tween{BackgroundTransparency = 1, Position = UDim2.new(1, -20, 1, -10)}
                         task.wait(0.25)
-                        mainFrame.AbsoluteObject:Destroy()
+                        mainFrame:Destroy()
+                        activeNotifications = activeNotifications - 1
                 end)
         end
 
