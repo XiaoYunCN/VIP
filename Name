@@ -1,6 +1,6 @@
 local MXC = {
     ["云脚本内容"] = {
-        ["公告内容"] = "lol\nskid\n🤔\nok",
+        ["公告内容"] = "傻逼公告",
         ["显示内容"] = "加入这个Discord云脚本频道！\n 需要VPN打开！感谢您的支持！🎉",
         ["Discord"] = "https://discord.gg/BuZwECkFCR"
     }
