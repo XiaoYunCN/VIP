@@ -2,7 +2,7 @@ local MXC = {
     ["云脚本内容"] = {
         ["公告内容"] = "lol\nskid\n🤔\nok",
         ["显示内容"] = "",
-        ["复制DC链接"] = "https://discord.gg/BuZwECkFCR"
+        ["Discord"] = "https://discord.gg/BuZwECkFCR"
     }
 };
 
