@@ -1,1 +1,8 @@
-lol\nskid\n🤔\nok
+local MXC = {
+    ["云脚本内容"] = {
+        ["公告"] = "lol\nskid\n🤔\nok",
+        ["复制DC链接"] = "https://discord.gg/BuZwECkFCR"
+    }
+};
+
+return MXC
