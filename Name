@@ -6,4 +6,4 @@ local MXC = {
     }
 };
 
-return MXC
+return Name_MXC
