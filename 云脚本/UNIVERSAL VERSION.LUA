@@ -9,13 +9,13 @@
     })
     
     local Tab = Window:MakeTab({
-        Name = "云脚本",
+        Name = "内容",
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
     })
     
     Tab:AddButton({
-        Name = "云脚本",
+        Name = "云脚本通用",
         Callback = function()
             loadstring(game:HttpGet("https://github.com/XiaoYunUwU/XiaoYunUwU/raw/main/Yun%20Script%2FPaid%20edition.lua", true))()
         end    
