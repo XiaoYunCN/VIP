@@ -1,9 +1,0 @@
-local MXC = {
-    ["云脚本内容"] = {
-        ["公告内容"] = "暂无",
-        ["显示内容"] = "如有问题，请加入↓\n请加入云脚本交流③QQ群号1014408755\n加入这个Discord云脚本频道！ 需要VPN打开！感谢您的支持！🎉",
-        ["Discord"] = "https://discord.gg/BuZwECkFCR"
-    }
-};
-
-return Name_MXC
