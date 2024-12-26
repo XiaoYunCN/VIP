@@ -35,7 +35,7 @@
     Tab:AddButton({
         Name = "云脚本|吃掉世界",
         Callback = function()
-            Notification
+            Notification()
             loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/VIP/refs/heads/main/Eat%20the%20World.lua", true))()
         end    
     })
