@@ -37,11 +37,11 @@
 
     local Name_MXC = loadstring(game:HttpGet("https://github.com/XiaoYunCN/VIP/raw/main/Name", true))()
 
-    Tab:AddParagraph("公告", Name_MXC["云脚本内容"]["公告内容"])
-    Tab:AddParagraph("内容", Name_MXC["云脚本内容"]["显示内容"])
+    Tab:AddParagraph("公告", MXC["云脚本内容"]["公告内容"])
+    Tab:AddParagraph("内容", MXC["云脚本内容"]["显示内容"])
     Tab:AddButton({
         Name = "复制云脚本Discord链接",
         Callback = function()
-            setclipboard(Name_MXC["云脚本内容"]["Discord"])
+            setclipboard(MXC["云脚本内容"]["Discord"])
         end    
     })
