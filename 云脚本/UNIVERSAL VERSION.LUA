@@ -15,7 +15,7 @@
     })
     
     Tab:AddButton({
-        Name = "云脚本通用",
+        Name = "云脚本-通用|超功能多",
         Callback = function()
             loadstring(game:HttpGet("https://github.com/XiaoYunUwU/XiaoYunUwU/raw/main/Yun%20Script%2FPaid%20edition.lua", true))()
         end    
