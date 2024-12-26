@@ -1,3 +1,4 @@
+--老外做的
 local repo = 'https://raw.githubusercontent.com/KINGHUB01/Gui/main/'
 
 local Library = loadstring(game:HttpGet(repo ..'Gui%20Lib%20%5BLibrary%5D'))()
