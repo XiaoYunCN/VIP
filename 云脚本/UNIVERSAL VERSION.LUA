@@ -44,11 +44,11 @@
 
     local Name_MXC = loadstring(game:HttpGet("https://github.com/XiaoYunCN/VIP/raw/main/Name", true))()
 
-    Tab:AddParagraph("公告", MXC["云脚本内容"]["公告内容"])
-    Tab:AddParagraph("内容", MXC["云脚本内容"]["显示内容"])
+    Tab:AddParagraph("公告", "暂无")
+    Tab:AddParagraph("内容", "如有问题，请加入↓\n请加入云脚本交流③QQ群号1014408755\n加入这个Discord云脚本频道！ 需要VPN打开！感谢您的支持！🎉")
     Tab:AddButton({
         Name = "复制云脚本Discord链接",
         Callback = function()
-            setclipboard(MXC["云脚本内容"]["Discord"])
+            setclipboard("https://discord.gg/BuZwECkFCR")
         end    
     })
