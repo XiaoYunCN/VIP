@@ -14,6 +14,7 @@
         PremiumOnly = false
     })
     
+    Tab:AddLabel("一点击就好，请勿重复点击云脚本")
     Tab:AddButton({
         Name = "云脚本-通用|超功能多",
         Callback = function()
