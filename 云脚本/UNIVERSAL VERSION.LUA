@@ -22,16 +22,23 @@
     })
 
     Tab:AddButton({
-        Name = "云脚本-吃掉世界",
+        Name = "云脚本|吃掉世界",
         Callback = function()
             loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/VIP/refs/heads/main/Eat%20the%20World.lua", true))()
         end    
     })
 
     Tab:AddButton({
-        Name = "云脚本-力量传奇",
+        Name = "云脚本|力量传奇",
         Callback = function()
             loadstring(game:HttpGet("https://github.com/XiaoYunCN/VIP/raw/main/%E5%8A%9B%E9%87%8F%E4%BC%A0%E5%A5%87.lua", true))()
+        end    
+    })
+
+    Tab:AddButton({
+        Name = "云脚本|极速传奇",
+        Callback = function()
+            loadstring(game:HttpGet("https://github.com/XiaoYunCN/VIP/raw/main/%E6%9E%81%E9%80%9F%E4%BC%A0%E5%A5%87.lua", true))()
         end    
     })
 
