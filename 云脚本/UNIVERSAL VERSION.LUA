@@ -1,6 +1,6 @@
     local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/LOL/main/Orion.lua", true))()
     
-    local function Notification()
+    function Notification()
     OrionLib:MakeNotification({
     	Name = "云脚本",
     	Content = "点击成功，请稍候...",
