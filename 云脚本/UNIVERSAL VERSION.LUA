@@ -23,7 +23,7 @@
         PremiumOnly = false
     })
 
-    KookTab:AddParagraph("公告", "云脚本已移除验证群组，每个人不会加入群组💀\n\n云脚本全部通用无BUG，没问题")
+    KookTab:AddParagraph("公告", "云脚本已移除验证群组，每个人不会加入群组💀。云脚本全部通用无BUG，没问题")
     KookTab:AddButton({
         Name = "云脚本-通用|超功能多",
         Callback = function()
