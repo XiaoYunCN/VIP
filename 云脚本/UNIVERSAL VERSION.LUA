@@ -24,6 +24,7 @@
     })
 
     KookTab:AddParagraph("公告", "云脚本已移除验证群组，每个人不会加入群组💀。\n\n云脚本全部通用无BUG，没问题")
+    KookTab:AddParagraph("更新内容", "12月28日\n修复：瞄准部位\n已换通知ui")
     KookTab:AddButton({
         Name = "云脚本-通用|超功能多",
         Callback = function()
