@@ -1,11 +1,11 @@
     local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/LOL/main/Orion.lua", true))()
-    
+
     function Notification()
     OrionLib:MakeNotification({
-    	Name = "云脚本",
-    	Content = "点击成功，请稍候...",
-    	Image = "rbxassetid://4483345998",
-    	Time = 5
+            Name = "云脚本",
+            Content = "点击成功，请稍候...",
+            Image = "rbxassetid://4483345998",
+            Time = 5
     })
     end
 
@@ -22,7 +22,7 @@
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
     })
-    
+
     local FuckTab = Window:MakeTab({
         Name = "出生",
         Icon = "rbxassetid://4483345998",
@@ -63,6 +63,14 @@
         Callback = function()
             Notification()
             loadstring(game:HttpGet("https://github.com/XiaoYunCN/VIP/raw/main/%E6%9E%81%E9%80%9F%E4%BC%A0%E5%A5%87.lua", true))()
+        end    
+    })
+    
+    KookTab:AddButton({
+        Name = "忍者传奇超多功能",
+        Callback = function()
+            Notification()
+            loadstring(game:HttpGet("https://github.com/CloudX-ScriptsWane/ScriptsDache/raw/main/hope%20earnestly%2FNinja%20Legend.lua", true))()
         end    
     })
 
