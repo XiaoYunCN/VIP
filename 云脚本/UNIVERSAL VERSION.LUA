@@ -22,7 +22,13 @@
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
     })
-
+    
+    local FuckTab = Window:MakeTab({
+        Name = "出生",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    FuckTab:AddParagraph("黑名单人员", "QQ3589992404\n\n原因：发截图（被封禁6个月），他说‘新年喜提6个月，都别用忍者了兄弟们，再用忍者把你们坤坤打烂’，并提到封禁原因是外挂😂，没说黑r。我说了一句😂，然后他开始骂我，最后踢被封😂。")
     KookTab:AddParagraph("公告", "云脚本已移除验证群组，每个人不会加入群组💀。\n\n云脚本全部通用无BUG，没问题")
     KookTab:AddParagraph("更新内容", "12月28日\n修复：瞄准部位\n增加：🦌管脚本【FE脚本】\n已换通知ui")
     KookTab:AddParagraph("联系", "QQ大号：168777105（\nQQ老号：3065560594\nDC小号：athenalol_5212\nDC大号：hahadlongat")
