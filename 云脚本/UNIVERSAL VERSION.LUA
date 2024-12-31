@@ -28,6 +28,7 @@
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
     })
+    
     FuckTab:AddLabel("这个小学生装逼骂死我，QQ3589992404，都给我去骂他😡永久黑名单")
     FuckTab:AddParagraph("原因", "发截图（被封禁6个月），他说‘新年喜提6个月，都别用忍者了兄弟们，再用忍者把你们坤坤打烂’，并提到封禁原因是外挂😂，没说黑r。我说了一句😂，然后他开始骂我，最后活该被踢😂。")
     FuckTab:AddParagraph("信息", "QQ号：3589992404\nQQ邮箱：3589992404@qq.com\nQQ名称：東山紅.")
@@ -67,7 +68,7 @@
     })
     
     KookTab:AddButton({
-        Name = "忍者传奇超多功能",
+        Name = "忍者传奇超多功能（不是云脚本）",
         Callback = function()
             Notification()
             loadstring(game:HttpGet("https://github.com/CloudX-ScriptsWane/ScriptsDache/raw/main/hope%20earnestly%2FNinja%20Legend.lua", true))()
