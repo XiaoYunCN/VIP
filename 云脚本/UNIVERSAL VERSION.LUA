@@ -24,7 +24,13 @@
     })
 
     local FuckTab = Window:MakeTab({
-        Name = "出生",
+        Name = "死畜生",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    
+    local Tab = Window:MakeTab({
+        Name = "云脚本记录🤔",
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
     })
@@ -34,7 +40,14 @@
     FuckTab:AddParagraph("信息", "QQ号：3589992404\nQQ邮箱：3589992404@qq.com\nQQ名称：東山紅.")
     KookTab:AddParagraph("公告", "云脚本已移除验证群组，每个人不会加入群组💀。\n\n云脚本全部通用无BUG，没问题")
     KookTab:AddParagraph("更新内容", "12月28日\n修复：瞄准部位\n增加：🦌管脚本【FE脚本】\n已换通知ui\n2025年1月1日\n云脚本己更新")
-    KookTab:AddParagraph("联系", "QQ大号：168777105（\nQQ老号：3065560594\nDC小号：athenalol_5212\nDC大号：hahadlongat")
+    Tab:AddParagraph("云脚本是由谁开发的？", "是小云开发的")
+    Tab:AddParagraph("谁教小云做脚本的？", "小云自己学做脚本，没人教过我做脚本，现在也没有人教过我做脚本！")
+    Tab:AddParagraph("云脚本是什么时候发布的？", "2023年4月9日，云脚本早期内测版发布\n2023年4月15日，云脚本正式发布")
+    Tab:AddParagraph("云脚本什么时候开始重做的？", "2024年5月1日，云脚本开始重做，更多功能")
+    Tab:AddLabel("2023年-- 云脚本【白灰脚本】：全缝合，支持15个服务器，免费的，2023年7月20日最后一次更新")
+    Tab:AddLabel("2024年-- 云脚本：部分缝合，自制，超多功能，支持60个服务器，收费版")
+    Tab:AddLabel("2025年-- 云脚本：全自制，自瞄，透视，更多通用功能，等其他功能，完全没有问题，免费版")
+    Tab:AddLabel("大家吃瓜就行")
     KookTab:AddButton({
         Name = "云脚本-通用|超功能多",
         Callback = function()
