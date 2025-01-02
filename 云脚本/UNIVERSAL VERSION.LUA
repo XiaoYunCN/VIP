@@ -34,7 +34,7 @@
     FuckTab:AddParagraph("原因", "发截图（被封禁6个月），他说‘新年喜提6个月，都别用忍者了兄弟们，再用忍者把你们坤坤打烂’，并提到封禁原因是外挂😂，没说黑r。我说了一句😂，然后他开始骂我，最后活该被踢😂。")
     FuckTab:AddParagraph("信息", "QQ号：3589992404\nQQ邮箱：3589992404@qq.com\nQQ名称：東山紅.")
     KookTab:AddParagraph("公告", "云脚本已移除验证群组，每个人不会加入群组💀。\n\n云脚本全部通用无BUG，没问题")
-    KookTab:AddParagraph("更新内容", "12月28日\n修复：瞄准部位\n增加：🦌管脚本【FE脚本】\n已换通知ui\n2025年1月1日\n云脚本己更新")
+    KookTab:AddParagraph("更新内容", "云脚本通用新增：相机模式、遮挡效果、相机类型\n月亮机器人睡觉了，明天【1月2日】更新云脚本")
     KookTab:AddButton({
         Name = "云脚本-通用|超功能多",
         Callback = function()
