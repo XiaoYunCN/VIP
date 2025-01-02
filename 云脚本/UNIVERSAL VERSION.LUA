@@ -36,7 +36,7 @@
     KookTab:AddParagraph("公告", "云脚本已移除验证群组，每个人不会加入群组💀。\n\n云脚本全部通用无BUG，没问题")
     KookTab:AddParagraph("更新内容", "云脚本通用新增：相机模式、遮挡效果、相机类型\n月亮机器人睡觉了，明天【1月3日】更新云脚本")
     KookTab:AddButton({
-        Name = "云脚本-通用|超功能多",
+        Name = "云脚本-通用|超多功能",
         Callback = function()
             Notification()
             loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/VIP/6fd47d2716b6a6eade78d80063401c7cfd300b39/%E4%BA%91%E8%84%9A%E6%9C%AC/UNIVERSAL%20VERSION.LUA", true))()
