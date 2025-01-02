@@ -35,7 +35,6 @@
     FuckTab:AddParagraph("信息", "QQ号：3589992404\nQQ邮箱：3589992404@qq.com\nQQ名称：東山紅.")
     KookTab:AddParagraph("公告", "云脚本已移除验证群组，每个人不会加入群组💀。\n\n云脚本全部通用无BUG，没问题")
     KookTab:AddParagraph("更新内容", "12月28日\n修复：瞄准部位\n增加：🦌管脚本【FE脚本】\n已换通知ui\n2025年1月1日\n云脚本己更新")
-    Tab:AddParagraph("云脚本是哪里人做的？", "是小云做的")
     KookTab:AddButton({
         Name = "云脚本-通用|超功能多",
         Callback = function()
