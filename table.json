@@ -3,6 +3,6 @@
         "Version": "V1.03",
         "Run": "Normal",
         "Name": "云脚本",
-        "whitelist": "true"
+        "Group": "true"
     }
 }
