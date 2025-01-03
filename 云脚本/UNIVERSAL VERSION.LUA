@@ -75,7 +75,7 @@
         end    
     })
 
-    KookTab:AddParagraph("内容", "如有问题，请加入↓\n请加入云脚本交流①QQ群号296846962\n加入这个Discord云脚本频道！ 需要VPN打开！感谢您的支持！🎉")
+    KookTab:AddParagraph("内容", "如有问题，请加入↓\n请加入云脚本交流③QQ群号1014408755\n加入这个Discord云脚本频道！ 需要VPN打开！感谢您的支持！🎉")
     KookTab:AddButton({
         Name = "复制云脚本Discord链接",
         Callback = function()
