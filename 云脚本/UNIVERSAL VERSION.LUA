@@ -42,7 +42,7 @@
             loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/VIP/6fd47d2716b6a6eade78d80063401c7cfd300b39/%E4%BA%91%E8%84%9A%E6%9C%AC/UNIVERSAL%20VERSION.LUA", true))()
         end    
     })
-
+    KookTab:AddParagraph("点了通用没反应是什么原因", "1.等几分钟就好了\n2.你这个加速器和VPN有点慢\n3.你有没有ping高，换个加速器\n4.自己问题")
     KookTab:AddButton({
         Name = "云脚本|吃掉世界",
         Callback = function()
