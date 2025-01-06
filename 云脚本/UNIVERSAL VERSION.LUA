@@ -60,7 +60,7 @@
     })
 
     KookTab:AddButton({
-        Name = "云脚本|极速传奇",
+        Name = "云脚本|极速传奇【2023|缝合】",
         Callback = function()
             Notification()
             loadstring(game:HttpGet("https://github.com/XiaoYunCN/VIP/raw/main/%E6%9E%81%E9%80%9F%E4%BC%A0%E5%A5%87.lua", true))()
