@@ -22,7 +22,13 @@
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
     })
-
+    KookTab:AddParagraph("内容", "如有问题，请加入↓\n请加入云脚本交流③QQ群号1014408755\n加入这个Discord云脚本频道！ 需要VPN打开！感谢您的支持！🎉")
+    KookTab:AddButton({
+        Name = "复制云脚本Discord链接",
+        Callback = function()
+            setclipboard("https://discord.com/invite/UrffJm73yx")
+        end    
+    })
     KookTab:AddParagraph("公告", "云脚本已移除验证群组，每个人不会加入群组💀。\n\n云脚本全部通用无BUG，没问题")
     KookTab:AddParagraph("更新内容", "云脚本通用新增：相机模式、遮挡效果、相机类型\n已更新！！")
     KookTab:AddButton({
@@ -62,13 +68,5 @@
         Callback = function()
             Notification()
             loadstring(game:HttpGet("https://github.com/CloudX-ScriptsWane/ScriptsDache/raw/main/hope%20earnestly%2FNinja%20Legend.lua", true))()
-        end    
-    })
-
-    KookTab:AddParagraph("内容", "如有问题，请加入↓\n请加入云脚本交流③QQ群号1014408755\n加入这个Discord云脚本频道！ 需要VPN打开！感谢您的支持！🎉")
-    KookTab:AddButton({
-        Name = "复制云脚本Discord链接",
-        Callback = function()
-            setclipboard("https://discord.com/invite/UrffJm73yx")
         end    
     })
