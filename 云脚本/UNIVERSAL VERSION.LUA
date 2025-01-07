@@ -23,16 +23,6 @@
         PremiumOnly = false
     })
 
-    local FuckTab = Window:MakeTab({
-        Name = "死畜生",
-        Icon = "rbxassetid://4483345998",
-        PremiumOnly = false
-    })
-    
-    
-    FuckTab:AddLabel("这个小学生装逼骂死我，QQ3589992404，都给我去骂他😡永久黑名单")
-    FuckTab:AddParagraph("原因", "发截图（被封禁6个月），他说‘新年喜提6个月，都别用忍者了兄弟们，再用忍者把你们坤坤打烂’，并提到封禁原因是外挂😂，没说黑r。我说了一句😂，然后他开始骂我，最后活该被踢😂。")
-    FuckTab:AddParagraph("信息", "QQ号：3589992404\nQQ邮箱：3589992404@qq.com\nQQ名称：東山紅.")
     KookTab:AddParagraph("公告", "云脚本已移除验证群组，每个人不会加入群组💀。\n\n云脚本全部通用无BUG，没问题")
     KookTab:AddParagraph("更新内容", "云脚本通用新增：相机模式、遮挡效果、相机类型\n已更新！！")
     KookTab:AddButton({
@@ -66,7 +56,7 @@
             loadstring(game:HttpGet("https://github.com/XiaoYunCN/VIP/raw/main/%E6%9E%81%E9%80%9F%E4%BC%A0%E5%A5%87.lua", true))()
         end    
     })
-    
+
     KookTab:AddButton({
         Name = "忍者传奇超多功能（不是云脚本）",
         Callback = function()
@@ -79,6 +69,6 @@
     KookTab:AddButton({
         Name = "复制云脚本Discord链接",
         Callback = function()
-            setclipboard("https://discord.gg/BuZwECkFCR")
+            setclipboard("https://discord.com/invite/UrffJm73yx")
         end    
     })
