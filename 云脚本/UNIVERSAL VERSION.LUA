@@ -48,14 +48,6 @@
     })
 
     KookTab:AddButton({
-        Name = "云脚本|力量传奇",
-        Callback = function()
-            Notification()
-            loadstring(game:HttpGet("https://github.com/XiaoYunCN/VIP/raw/main/%E5%8A%9B%E9%87%8F%E4%BC%A0%E5%A5%87.lua", true))()
-        end    
-    })
-
-    KookTab:AddButton({
         Name = "云脚本|极速传奇【2023|缝合】",
         Callback = function()
             Notification()
