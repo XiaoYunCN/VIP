@@ -181,7 +181,7 @@ TOGGLE["das"]["CornerRadius"] = UDim.new(0.20000000298023224, 0)
 end
 end
 
-function Kavo.CreateLib(kavName, themeList)
+function library.new(kavName, themeList)
     if not themeList then
         themeList = themes
     end
@@ -381,7 +381,7 @@ function Kavo.CreateLib(kavName, themeList)
 
     local first = true
 
-    function Tabs:NewTab(tabName)
+    function Tabs:Tab(tabName)
         tabName = tabName or "Tab"
         local tabButton = Instance.new("TextButton")
         local UICorner = Instance.new("UICorner")
@@ -481,8 +481,9 @@ function Kavo.CreateLib(kavName, themeList)
             end
         end)()
 
-        function Sections:NewSection(secName, hidden)
+        function Sections:section(secName, hidden)
             secName = secName or "Section"
+            secName
             local sectionFunctions = {}
             local modules = {}
             hidden = hidden or false
@@ -585,7 +586,7 @@ function Kavo.CreateLib(kavName, themeList)
                 updateSectionFrame()
                 UpdateSize()
             local Elements = {}
-            function Elements:NewButton(bname,tipINf, callback)
+            function Elements:Button(bname,tipINf, callback)
                 showLogo = showLogo or true
                 local ButtonFunction = {}
                 tipINf = tipINf or "Tip: Clicking this nothing will happen!"
@@ -786,7 +787,7 @@ function Kavo.CreateLib(kavName, themeList)
                 return ButtonFunction
             end
 
-            function Elements:NewTextBox(tname, tTip, callback)
+            function Elements:TextBox(tname, tTip, callback)
                 tname = tname or "Textbox"
                 tTip = tTip or "Gets a value of Textbox"
                 callback = callback or function() end
@@ -982,11 +983,12 @@ function Kavo.CreateLib(kavName, themeList)
                 end)()
             end 
 
-                function Elements:NewToggle(tname, nTip, callback)
+                function Elements:Toggle(tname, nTip, toggled, callback)
                     local TogFunction = {}
                     tname = tname or "Toggle"
                     nTip = nTip or "Prints Current Toggle State"
                     callback = callback or function() end
+                    toggled = toggled or false
                     local toggled = false
                     table.insert(SettingsT, tname)
 
@@ -1475,7 +1477,7 @@ function Kavo.CreateLib(kavName, themeList)
                 end)        
             end
 
-            function Elements:NewDropdown(dropname, dropinf, list, callback)
+            function Elements:Dropdown(dropname, dropinf, list, callback)
                 local DropFunction = {}
                 dropname = dropname or "Dropdown"
                 list = list or {}
@@ -1923,7 +1925,7 @@ function Kavo.CreateLib(kavName, themeList)
                 end
                 return DropFunction
             end
-            function Elements:NewKeybind(keytext, keyinf, first, callback)
+            function Elements:Keybind(keytext, keyinf, first, callback)
                 keytext = keytext or "KeybindText"
                 keyinf = keyinf or "KebindInfo"
                 callback = callback or function() end
@@ -2604,7 +2606,7 @@ function Kavo.CreateLib(kavName, themeList)
                 setcolor({h,s,v})
             end
 
-            function Elements:NewLabel(title)
+            function Elements:Label(title)
                     local labelFunctions = {}
                     local label = Instance.new("TextLabel")
                     local UICorner = Instance.new("UICorner")
