@@ -1,6 +1,6 @@
 game.StarterGui:SetCore("SendNotification", {
     Title = "通知",
-    Text = "云脚本群号：1014408755\nQQ频道号：RobloxScript",
+    Text = "云脚本群号：296846962\nQQ频道号：RobloxScript",
     Icon = "rbxassetid://6031302918",
     Duration = 14.4
 })
