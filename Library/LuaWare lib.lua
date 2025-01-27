@@ -154,9 +154,9 @@ function library.new(library, name, theme)
             v:Destroy()
         end
     end
-    MainXEColor = Color3.fromRGB(7,7,7)
-    Background = Color3.fromRGB(7,7,7)
-    zyColor= Color3.fromRGB(12,12,12)
+    MainColor = Color3.fromRGB(28, 33, 55)
+    Background = Color3.fromRGB(28, 33, 55)
+    zyColor = Color3.fromRGB(37, 43, 71)
     beijingColor = Color3.fromRGB(255, 247, 247)
     local dogent = Instance.new("ScreenGui")
     local MainXE = Instance.new("Frame")
