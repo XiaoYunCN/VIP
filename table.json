@@ -1,8 +1,8 @@
 {
     "Yun": {
-        "Version": "V1.1",
+        "Version": "V1.2",
         "Run": "Normal",
-        "Name": "云中心",
+        "Name": "云Hub脚本",
         "Group": "true"
     }
 }
