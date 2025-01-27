@@ -1,3 +1,10 @@
+--[[
+    云脚本UI
+    可二改
+    源码已公开
+    QQ-168777105 作者小云
+]]
+
 repeat
     task.wait()
 until game:IsLoaded()
