@@ -1,13 +1,13 @@
 return {
-    NAMEID = {
+    USERID = {
         ["123456789"] = "ks",
         ["113"] = "s"
     },
-    JOINDATE = {
+    DATE = {
         ["2023/6/1"] = "6",
         ["2024/12/31"] = "k"
     },
-    USERNAME = {
+    NAME = {
         ["Player1"] = "nm",
         ["Hudson_From8"] = "wc"
     },
