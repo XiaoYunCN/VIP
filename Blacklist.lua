@@ -9,11 +9,11 @@ return {
     },
     USERNAME = {
         ["Player1"] = "nm",
-        ["Roblox"] = "wc"
+        ["Hudson_From8"] = "wc"
     },
     CLIENTID = {
-        ["ABCD-1234-EFGH"] = "6",
-        ["XYZ-9876-TUVW"] = "k"
+        [""] = "6",
+        ["98"] = "k"
     },
     HWID = {
         ["f0d2de553bddaadf630f3fe0409a5ee9798de325fa542c0fe8464aa4d1f11662"] = "😡",
