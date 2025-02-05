@@ -3,6 +3,6 @@
         "Version": "V1.3",
         "Run": "Normal",
         "Name": "云中心",
-        "Group": "false"
+        "Group": "true"
     }
 }
