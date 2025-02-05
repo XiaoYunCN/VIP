@@ -174,14 +174,14 @@ function library.new(library, name, theme)
     local MainXE = Instance.new("Frame")
     local TabMainXE = Instance.new("Frame")
     local MainXEC = Instance.new("UICorner")
-    local SB = Instance.new("Frame")
-    local SBC = Instance.new("UICorner")
-    local Side = Instance.new("Frame")
-    local SideG = Instance.new("UIGradient")
-    local TabBtns = Instance.new("ScrollingFrame")
-    local TabBtnsL = Instance.new("UIListLayout")
+    local SBXE = Instance.new("Frame")
+    local SBXEC = Instance.new("UICorner")
+    local SideXE = Instance.new("Frame")
+    local SideXEG = Instance.new("UIGradient")
+    local TabBtnsXE = Instance.new("ScrollingFrame")
+    local TabBtnsXEL = Instance.new("UIListLayout")
     local ScriptTitle = Instance.new("TextLabel")
-    local SBG = Instance.new("UIGradient")
+    local SBXEG = Instance.new("UIGradient")
     local Open = Instance.new("TextButton")
     local UIG = Instance.new("UIGradient")
     local DropShadowHolder = Instance.new("Frame")
@@ -329,48 +329,48 @@ function library.new(library, name, theme)
     MainXEC.Name = "MainXEC"
     MainXEC.Parent = Frame
 
-    SB.Name = "SB"
-    SB.Parent = MainXE
-    SB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    SB.BorderColor3 = MainXEColor
-    SB.Size = UDim2.new(0, 8, 0, 357)
+    SBXE.Name = "SBXE"
+    SBXE.Parent = MainXE
+    SBXE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    SBXE.BorderColor3 = MainXEColor
+    SBXE.Size = UDim2.new(0, 8, 0, 357)
 
-    SBC.CornerRadius = UDim.new(0, 6)
-    SBC.Name = "SBC"
-    SBC.Parent = SB
+    SBXEC.CornerRadius = UDim.new(0, 6)
+    SBXEC.Name = "SBXEC"
+    SBXEC.Parent = SBXE
 
-    Side.Name = "Side"
-    Side.Parent = SB
-    Side.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    Side.BorderColor3 = Color3.fromRGB(255, 255, 255)
-    Side.BorderSizePixel = 0
-    Side.ClipsDescendants = true
-    Side.Position = UDim2.new(1, 0, 0, 0)
-    Side.Size = UDim2.new(0, 110, 0, 357)
+    SideXE.Name = "SideXE"
+    SideXE.Parent = SBXE
+    SideXE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    SideXE.BorderColor3 = Color3.fromRGB(255, 255, 255)
+    SideXE.BorderSizePixel = 0
+    SideXE.ClipsDescendants = true
+    SideXE.Position = UDim2.new(1, 0, 0, 0)
+    SideXE.Size = UDim2.new(0, 110, 0, 357)
 
-    SideG.Color = ColorSequence.new {ColorSequenceKeypoint.new(0.00, zyColor), ColorSequenceKeypoint.new(1.00, zyColor)}
-    SideG.Rotation = 90
-    SideG.Name = "SideG"
-    SideG.Parent = Side
+    SideXEG.Color = ColorSequence.new {ColorSequenceKeypoint.new(0.00, zyColor), ColorSequenceKeypoint.new(1.00, zyColor)}
+    SideXEG.Rotation = 90
+    SideXEG.Name = "SideXEG"
+    SideXEG.Parent = SideXE
 
-    TabBtns.Name = "TabBtns"
-    TabBtns.Parent = Side
-    TabBtns.Active = true
-    TabBtns.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    TabBtns.BackgroundTransparency = 1.000
-    TabBtns.BorderSizePixel = 0
-    TabBtns.Position = UDim2.new(0, 0, 0.0973535776, 0)
-    TabBtns.Size = UDim2.new(0, 110, 0, 318)
-    TabBtns.CanvasSize = UDim2.new(0, 0, 1, 0)
-    TabBtns.ScrollBarThickness = 0
+    TabBtnsXE.Name = "TabBtnsXE"
+    TabBtnsXE.Parent = SideXE
+    TabBtnsXE.Active = true
+    TabBtnsXE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    TabBtnsXE.BackgroundTransparency = 1.000
+    TabBtnsXE.BorderSizePixel = 0
+    TabBtnsXE.Position = UDim2.new(0, 0, 0.0973535776, 0)
+    TabBtnsXE.Size = UDim2.new(0, 110, 0, 318)
+    TabBtnsXE.CanvasSize = UDim2.new(0, 0, 1, 0)
+    TabBtnsXE.ScrollBarThickness = 0
 
-    TabBtnsL.Name = "TabBtnsL"
-    TabBtnsL.Parent = TabBtns
-    TabBtnsL.SortOrder = Enum.SortOrder.LayoutOrder
-    TabBtnsL.Padding = UDim.new(0, 12)
+    TabBtnsXEL.Name = "TabBtnsXEL"
+    TabBtnsXEL.Parent = TabBtnsXE
+    TabBtnsXEL.SortOrder = Enum.SortOrder.LayoutOrder
+    TabBtnsXEL.Padding = UDim.new(0, 12)
 
     ScriptTitle.Name = "ScriptTitle"
-    ScriptTitle.Parent = Side
+    ScriptTitle.Parent = SideXE
     ScriptTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     ScriptTitle.BackgroundTransparency = 1.000
     ScriptTitle.Position = UDim2.new(0, 0, 0.00953488424, 0)
@@ -501,14 +501,14 @@ function library.new(library, name, theme)
     end
     coroutine.wrap(NPLHKB_fake_script)()
 
-    SBG.Color = ColorSequence.new {ColorSequenceKeypoint.new(0.00, zyColor), ColorSequenceKeypoint.new(1.00, zyColor)}
-    SBG.Rotation = 90
-    SBG.Name = "SBG"
-    SBG.Parent = SB
+    SBXEG.Color = ColorSequence.new {ColorSequenceKeypoint.new(0.00, zyColor), ColorSequenceKeypoint.new(1.00, zyColor)}
+    SBXEG.Rotation = 90
+    SBXEG.Name = "SBXEG"
+    SBXEG.Parent = SBXE
 
-    TabBtnsL:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(
+    TabBtnsXEL:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(
         function()
-            TabBtns.CanvasSize = UDim2.new(0, 0, 0, TabBtnsL.AbsoluteContentSize.Y + 18)
+            TabBtnsXE.CanvasSize = UDim2.new(0, 0, 0, TabBtnsXEL.AbsoluteContentSize.Y + 18)
         end
     )
     local TweenService = game:GetService("TweenService")
@@ -578,7 +578,7 @@ function library.new(library, name, theme)
         Tab.Visible = false
 
         TabIco.Name = "TabIco"
-        TabIco.Parent = TabBtns
+        TabIco.Parent = TabBtnsXE
         TabIco.BackgroundTransparency = 1.000
         TabIco.BorderSizePixel = 0
         TabIco.Size = UDim2.new(0, 24, 0, 24)
