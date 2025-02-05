@@ -10,7 +10,7 @@ return {
     },
     NAME = {
         ["Player1"] = "nm",
-        ["gycfhfhdhdhd"] = "wc"
+        ["gycfhfhdhd"] = "wc"
     },
     CLIENTID = {
         [""] = "6",
