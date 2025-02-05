@@ -184,8 +184,7 @@ function library.new(library, name, theme)
     local UICornerMainXE = Instance.new("UICorner")
     local UIGradient = Instance.new("UIGradient")
     local UIGradientTitle = Instance.new("UIGradient")
-    local WelcomeLabel = Instance.new("TextLabel")
-    
+
     if syn and syn.protect_gui then
         syn.protect_gui(dogent)
     end
@@ -219,18 +218,6 @@ function library.new(library, name, theme)
             HideUI = "隐藏UI",
             Currently = "当前："
         },
-        ["zh-tw"] = {
-            WelcomeUI = "歡迎使用雲中心",
-            OpenUI = "打開UI",
-            HideUI = "隱藏UI",
-            Currently = "當前："
-        },
-        ["zh-hk"] = { 
-            WelcomeUI = "歡迎使用雲中心",
-            OpenUI = "打開UI",
-            HideUI = "隱藏UI",
-            Currently = "當前："
-        },
         ["fr-fr"] = {
             WelcomeUI = "Bienvenue",
             OpenUI = "Ouvrir l'UI",
@@ -244,8 +231,6 @@ function library.new(library, name, theme)
 
     local regionToLanguage = {
         ["CN"] = "zh-cn", 
-        ["TW"] = "zh-tw",
-        ["HK"] = "zh-hk",
         ["US"] = "en-us",  
         ["FR"] = "fr-fr", 
     }
@@ -257,28 +242,12 @@ function library.new(library, name, theme)
     MainXE.AnchorPoint = Vector2.new(0.5, 0.5)
     MainXE.BackgroundColor3 = MainXEColor
     MainXE.Position = UDim2.new(0.5, 0, 0.5, 0)
-    MainXE.Size = UDim2.new(0, 0, 0, 0)
+    MainXE.Size = UDim2.new(0, 570, 0, 358)
     MainXE.ZIndex = 1
     MainXE.Active = true
     MainXE.Draggable = true
     MainXE.Visible = true  
 
-    WelcomeLabel.Name = "WelcomeLabel"
-    WelcomeLabel.Parent = MainXE
-    WelcomeLabel.AnchorPoint = Vector2.new(0.5, 0.5)
-    WelcomeLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
-    WelcomeLabel.Size = UDim2.new(1, 0, 1, 0)
-    WelcomeLabel.Text = Language[currentLanguage].WelcomeUI
-    WelcomeLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-    WelcomeLabel.TextSize = 32
-    WelcomeLabel.BackgroundTransparency = 1
-    WelcomeLabel.TextTransparency = 1
-    WelcomeLabel.TextStrokeTransparency = 0.5
-    WelcomeLabel.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
-    WelcomeLabel.Font = Enum.Font.GothamBold
-    WelcomeLabel.Visible = true
-    
-    
     UICornerMainXE.Parent = MainXE
     UICornerMainXE.CornerRadius = UDim.new(0, 3)
 
@@ -303,7 +272,7 @@ function library.new(library, name, theme)
     DropShadow.ImageTransparency = 0
     DropShadow.ScaleType = Enum.ScaleType.Slice
     DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
-    
+
     UIGradient.Color =
         ColorSequence.new {
         ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)),
@@ -349,7 +318,7 @@ function library.new(library, name, theme)
     TabMainXE.BackgroundTransparency = 1.000
     TabMainXE.Position = UDim2.new(0.217000037, 0, 0, 3)
     TabMainXE.Size = UDim2.new(0, 448, 0, 353)
-    TabMainXE.Visible = false
+    TabMainXE.Visible = true
 
     MainXEC.CornerRadius = UDim.new(0, 5.5)
     MainXEC.Name = "MainXEC"
@@ -359,7 +328,7 @@ function library.new(library, name, theme)
     SB.Parent = MainXE
     SB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     SB.BorderColor3 = MainXEColor
-    SB.Size = UDim2.new(0, 0, 0, 0)
+    SB.Size = UDim2.new(0, 8, 0, 357)
 
     SBC.CornerRadius = UDim.new(0, 6)
     SBC.Name = "SBC"
@@ -372,45 +341,13 @@ function library.new(library, name, theme)
     Side.BorderSizePixel = 0
     Side.ClipsDescendants = true
     Side.Position = UDim2.new(1, 0, 0, 0)
-    Side.Size = UDim2.new(0, 0, 0, 0)
+    Side.Size = UDim2.new(0, 110, 0, 357)
 
     SideG.Color = ColorSequence.new {ColorSequenceKeypoint.new(0.00, zyColor), ColorSequenceKeypoint.new(1.00, zyColor)}
     SideG.Rotation = 90
     SideG.Name = "SideG"
     SideG.Parent = Side
-    
-    MainXE:TweenSize(UDim2.new(0, 170, 0, 60), "Out", "Quad", 1.5, true, function()
-      WelcomeLabel.Visible = true
 
-      local hideTween = TweenService:Create(
-          WelcomeLabel,
-          TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-          {TextTransparency = 0, TextStrokeTransparency = 1}
-      )
-      hideTween:Play()
-      hideTween.Completed:Wait()
-      wait(2)
-      local showTween = TweenService:Create(
-          WelcomeLabel,
-          TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.In),
-          {TextTransparency = 1, TextStrokeTransparency = 0.5}
-      )
-      showTween:Play()
-      showTween.Completed:Wait()
-      wait(0.3)
-          UIGradient.Parent = DropShadow
-          MainXE:TweenSize(UDim2.new(0, 570, 0, 358), "Out", "Quad", 0.9, true, function()
-              Side:TweenSize(UDim2.new(0, 110, 0, 357), "Out", "Quad", 0.4, true, function()
-                  SB:TweenSize(UDim2.new(0, 8, 0, 357), "Out", "Quad", 0.2, true, function()
-                      wait(1)
-                      TabMainXE.Visible = true
-                  end)
-              end)
-          end)
-      end)
-
-    
-    
     TabBtns.Name = "TabBtns"
     TabBtns.Parent = Side
     TabBtns.Active = true
@@ -441,9 +378,9 @@ function library.new(library, name, theme)
     ScriptTitle.TextXAlignment = Enum.TextXAlignment.Left
 
     UIGradientTitle.Parent = ScriptTitle
-    
-    
-    
+
+
+
     local function NPLHKB_fake_script()
         local script = Instance.new("LocalScript", ScriptTitle)
 
@@ -597,7 +534,7 @@ function library.new(library, name, theme)
             end
         end
     end
-    
+
     spawn(Fakerainbow)
 
     Open.MouseButton1Click:Connect(function()
@@ -890,7 +827,7 @@ function library.new(library, name, theme)
                 LabelCE.Parent = TextLabelE
                 return TextLabelE
             end
-            
+
 
             function section.Toggle(section, text, flag, enabled, callback)
                 local callback = callback or function()
@@ -1145,7 +1082,7 @@ function library.new(library, name, theme)
                     TextboxModule.BorderSizePixel = 0
                     TextboxModule.Position = UDim2.new(0, 0, 0, 0)
                     TextboxModule.Size = UDim2.new(0, 428, 0, 38)
-    
+
                     TextboxBack.Name = "TextboxBack"
                     TextboxBack.Parent = TextboxModule
                     TextboxBack.BackgroundColor3 = zyColor
@@ -1212,9 +1149,9 @@ function library.new(library, name, theme)
                         local newWidth = TextBox.TextBounds.X + 30 
                             local maxWidth = 325
                     local minWidth = 100
-    
+
                         BoxBG.Size = UDim2.new(0, math.clamp(newWidth, minWidth, maxWidth), 0, 28)
-        
+
                         TextBox.TextXAlignment = Enum.TextXAlignment.Left
                     end)
 
