@@ -4,7 +4,12 @@
     源码已公开
     QQ-168777105 制作者小云魔改的
 ]]
-
+game.StarterGui:SetCore("SendNotification", {
+    Title = "通知",
+    Text = "已移除欢迎提示",
+    Icon = "rbxassetid://6031302918",
+    Duration = 14.4
+})
 repeat
     task.wait()
 until game:IsLoaded()
