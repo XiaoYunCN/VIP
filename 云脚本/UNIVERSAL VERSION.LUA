@@ -1,9 +1,4 @@
-game.StarterGui:SetCore("SendNotification", {
-    Title = "通知",
-    Text = "如果有问题进群\nQQ群号：296846962",
-    Icon = "rbxassetid://6031302918",
-    Duration = 14.4
-})
+
 game.StarterGui:SetCore("SendNotification", {
     Title = "通知",
     Text = "正在加载，稍等",
