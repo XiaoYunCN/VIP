@@ -1,6 +1,6 @@
 game.StarterGui:SetCore("SendNotification", {
     Title = "通知",
-    Text = "如果有问题，进群号：444161131",
+    Text = "请搜索并加入Roblox群组‘云脚本’",
     Icon = "rbxassetid://6031302918",
     Duration = 14.4
 })
