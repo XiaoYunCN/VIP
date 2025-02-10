@@ -1,4 +1,5 @@
 -- 普通的黑名单
+-- HOOKMET太可恶了，能绕过验证HWID
 return {
     USERID = { -- 用户ID
         ["123456789"] = "ks",
