@@ -10,6 +10,12 @@ game.StarterGui:SetCore("SendNotification", {
     Icon = "rbxassetid://6031302918",
     Duration = 14.4
 })
+game.StarterGui:SetCore("SendNotification", {
+    Title = "公告",
+    Text = "云脚本决定关闭显示其他脚本用户\n下次更新",
+    Icon = "rbxassetid://6031302918",
+    Duration = 14.4
+})
 repeat
     task.wait()
 until game:IsLoaded()
