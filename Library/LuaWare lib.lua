@@ -5,8 +5,8 @@
     QQ-168777105 制作者小云魔改的
 ]]
 game.StarterGui:SetCore("SendNotification", {
-    Title = "通知",
-    Text = "已移除欢迎提示",
+    Title = "公告",
+    Text = "云脚本群组已经全踢完了！\n感谢你们使用云脚本",
     Icon = "rbxassetid://6031302918",
     Duration = 14.4
 })
