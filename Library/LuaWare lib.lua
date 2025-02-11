@@ -6,7 +6,7 @@
 ]]
 game.StarterGui:SetCore("SendNotification", {
     Title = "公告",
-    Text = "云脚本群组已经全踢完了！\n感谢你们使用云脚本",
+    Text = "云脚本群组已经全踢完了！\n感谢您使用云脚本",
     Icon = "rbxassetid://6031302918",
     Duration = 14.4
 })
