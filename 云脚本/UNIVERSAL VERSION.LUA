@@ -1,8 +1,14 @@
-game.StarterGui:SetCore("SendNotification", {
+game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "通知",
-    Text = "请搜索并加入QQ群号“444161131”",
-    Icon = "rbxassetid://6031302918",
-    Duration = 14.4
+    Text = "加入这个云脚本QQ群！\n感谢您的支持！🎉",
+    Duration = 20,
+    Button1Text = "复制QQ群号",
+    Button2Text = "关闭通知",
+    Callback = function(Button)
+        if Button == "Button1" then
+            setclipboard("444161131")
+        end
+    end
 })
 game.StarterGui:SetCore("SendNotification", {
     Title = "通知",
