@@ -1,11 +1,11 @@
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "通知",
-    Text = "加入这个云脚本QQ群！\n感谢您的支持！🎉",
+    Text = "加入这个云脚本QQ群！\n 感谢您的支持！🎉",
     Duration = 20,
-    Button1Text = "复制QQ群号",
-    Button2Text = "关闭通知",
-    Callback = function(Button)
-        if Button == "Button1" then
+    Button1 = "复制QQ群号",
+    Button2 = "关闭通知",
+    Callback = function(Value)
+        if Value == "Button1" then
             setclipboard("444161131")
         end
     end
